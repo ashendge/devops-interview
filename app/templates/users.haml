@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+{% block content %}
+{% if not users %}
+%p No users
+{% else %}
+%p All Users
+%ul
+  {% for user in users %}
+  %li {{ user }}
+  {% endfor %}
+{% endif %}
+{% endblock %}

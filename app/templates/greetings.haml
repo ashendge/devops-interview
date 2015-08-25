@@ -1,0 +1,8 @@
+{% extends 'index.html' %}
+{% block content %}
+%p
+  Hello {{ username }}!
+  {% if not_new %}
+  Welcome back!
+  {% endif %}
+{% endblock %}
